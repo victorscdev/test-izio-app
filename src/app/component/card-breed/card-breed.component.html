@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-header">
+        <img [src]="data.image.url" class="card-img-top" [alt]="data.name">
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{ data.name }}</h5>
+        <p class="card-text">{{ data.temperament }}</p>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-primary" (click)="onClickOpenModal(data.id)">View more Informations</button>
+    </div>
+</div>
+
+<modal-view-breed [isOpen]="isOpenModal" [breed]="breed" (closeModal)="onCloseModal($event)"></modal-view-breed>

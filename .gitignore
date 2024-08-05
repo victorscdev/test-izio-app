@@ -1,0 +1,85 @@
+# Compiled output
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDEs
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'ng build'
+/dist
+/tmp
+/out-tsc
+
+# Output of 'npm pack'
+*.tgz
+
+# Output of 'npm run build'
+/build/
+
+# Angular CLI configuration
+.angular/
+
+# Angular NgPackagr cache
+/.ng_build/
+
+# Misc
+.sass-cache/
+connect.lock
+coverage/
+lib-cov/
+*.seed
+*.coverdata
+*.coverrun
+*.dll
+*.exe
+*.pid
+*.tgz
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+pids
+*.pid.lock
+libpeerconnection.log
+.sentryclirc
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.trash
+Icon?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+# Linux/Mac swapfiles
+*.swp
+*.swo

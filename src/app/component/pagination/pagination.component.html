@@ -1,0 +1,5 @@
+<div class="pagination-controls">
+    <button class="btn btn-secondary" (click)="prevPage()" [disabled]="page === 0">Previous</button>
+    <span>Page {{ page + 1 }}</span>
+    <button class="btn btn-secondary" (click)="nextPage()" [disabled]="itens < 10">Next</button>
+</div>

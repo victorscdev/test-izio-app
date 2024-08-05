@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row mb-4 mt-4">
+        <div class="col">
+            <h1>All Breeds</h1>
+        </div>
+    </div>
+
+    <div class="row mb-4 mt-4">
+        <div class="col">
+            <pagination [page]="page" [itens]="itens" (pageChange)="onPageChange($event)">
+            </pagination>
+        </div>
+    </div>
+
+    <div class="row mb-4 mt-4">
+        <div class="col-2 mb-4" *ngFor="let breed of breeds">
+            <card-breed [data]="breed"></card-breed>
+        </div>
+    </div>
+</div>

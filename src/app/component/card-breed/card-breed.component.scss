@@ -1,0 +1,12 @@
+.card {
+    height: 100%;
+    
+    .card-header {
+        height: 200px;
+
+        .card-img-top {
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+}

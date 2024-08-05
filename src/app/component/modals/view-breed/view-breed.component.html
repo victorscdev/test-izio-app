@@ -1,0 +1,63 @@
+<div class="modal-view-breed" [ngClass]="{'show': isOpen}">
+    <div class="overlay">
+        <div class="modal-container">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">{{ breed?.name }}</h1>
+                </div>
+                <div class="modal-body">
+                    <h3>General</h3>
+                    <div class="info">
+                        <p><strong>Bred for:</strong></p>
+                        <small>{{ breed?.bred_for }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Bredd group:</strong></p>
+                        <small>{{ breed?.breed_group }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Life span:</strong></p>
+                        <small>{{ breed?.life_span }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Origin:</strong></p>
+                        <small>{{ breed?.origin }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Temperament:</strong></p>
+                        <small>{{ breed?.temperament }}</small>
+                    </div>
+
+                    <hr>
+
+                    <h3>Height</h3>
+
+                    <div class="info">
+                        <p><strong>Imperial:</strong></p>
+                        <small>{{ breed?.height.imperial }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Metric:</strong></p>
+                        <small>{{ breed?.height.metric }}</small>
+                    </div>
+
+                    <hr>
+
+                    <h3>Weight</h3>
+
+                    <div class="info">
+                        <p><strong>Imperial:</strong></p>
+                        <small>{{ breed?.weight.imperial }}</small>
+                    </div>
+                    <div class="info">
+                        <p><strong>Metric:</strong></p>
+                        <small>{{ breed?.weight.metric }}</small>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" (click)="close()">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
